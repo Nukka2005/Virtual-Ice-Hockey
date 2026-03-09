@@ -1,0 +1,10 @@
+0.7
+2020.1
+May 27 2020
+20:09:33
+D:/Shaheer/Habib/DLD/dldProject/dldProject.sim/sim_1/behav/xsim/glbl.v,1590624368,verilog,,,,glbl,,,,,,,,
+D:/Shaheer/Habib/DLD/dldProject/dldProject.srcs/sources_1/new/debounce.v,1744023703,verilog,,D:/Shaheer/Habib/DLD/dldProject/dldProject.srcs/sources_1/new/pixel_gen.v,,debounce,,,,,,,,
+D:/Shaheer/Habib/DLD/dldProject/dldProject.srcs/sources_1/new/pixel_gen.v,1746171805,verilog,,D:/Shaheer/Habib/DLD/dldProject/dldProject.srcs/sources_1/new/ultrasonic_display.v,,pixel_gen,,,,,,,,
+D:/Shaheer/Habib/DLD/dldProject/dldProject.srcs/sources_1/new/top.v,1745168955,verilog,,,,top,,,,,,,,
+D:/Shaheer/Habib/DLD/dldProject/dldProject.srcs/sources_1/new/ultrasonic_display.v,1745590744,verilog,,D:/Shaheer/Habib/DLD/dldProject/dldProject.srcs/sources_1/new/vga_controller.v,,ultrasonic,,,,,,,,
+D:/Shaheer/Habib/DLD/dldProject/dldProject.srcs/sources_1/new/vga_controller.v,1744023793,verilog,,D:/Shaheer/Habib/DLD/dldProject/dldProject.srcs/sources_1/new/top.v,,vga_controller,,,,,,,,

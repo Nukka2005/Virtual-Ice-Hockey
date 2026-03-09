@@ -1,0 +1,36 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Fri Oct 31 15:00:28 2025
+# Process ID: 7588
+# Current directory: C:/Users/Ebad/Desktop/Sem_2/DLD/Ping-Pong-Game-Vivado-Basys-3-/dldProject
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11316 C:\Users\Ebad\Desktop\Sem_2\DLD\Ping-Pong-Game-Vivado-Basys-3-\dldProject\dldProject.xpr
+# Log file: C:/Users/Ebad/Desktop/Sem_2/DLD/Ping-Pong-Game-Vivado-Basys-3-/dldProject/vivado.log
+# Journal file: C:/Users/Ebad/Desktop/Sem_2/DLD/Ping-Pong-Game-Vivado-Basys-3-/dldProject\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Ebad/Desktop/Sem_2/DLD/Ping-Pong-Game-Vivado-Basys-3-/dldProject/dldProject.xpr
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Common 17-344] 'open_project' was cancelled
+open_project C:/Users/Ebad/Downloads/dldProject/dldProject.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/2020.1/data/ip'.
+ERROR: [Vivado 12-106] *** Exception: java.lang.NullPointerException (See C:/Users/Ebad/Desktop/Sem_2/DLD/Ping-Pong-Game-Vivado-Basys-3-/dldProject/vivado_pid7588.debug)
+open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:08 . Memory (MB): peak = 1024.250 ; gain = 0.000
+ERROR: [Common 17-39] 'open_project' failed due to earlier errors.
+update_compile_order -fileset sources_1
+close_project
+open_project C:/Users/Ebad/Desktop/Sem_2/DLD/Ping-Pong-Game-Vivado-Basys-3-/dldProject/dldProject.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/Ebad/Desktop/DLD/dldProject' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/2020.1/data/ip'.
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Oct 31 15:03:36 2025...

@@ -1,0 +1,418 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Mon May 19 12:59:20 2025
+# Process ID: 26844
+# Current directory: C:/Users/Ebad/Desktop/DLD/dldProject/dldProject.runs/synth_1
+# Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file: C:/Users/Ebad/Desktop/DLD/dldProject/dldProject.runs/synth_1/top.vds
+# Journal file: C:/Users/Ebad/Desktop/DLD/dldProject/dldProject.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source top.tcl -notrace
+Command: synth_design -top top -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 28260
+WARNING: [Synth 8-6901] identifier 'game_over' is used before its declaration [C:/Users/Ebad/Desktop/DLD/dldProject/dldProject.srcs/sources_1/new/pixel_gen.v:128]
+WARNING: [Synth 8-6901] identifier 'game_over' is used before its declaration [C:/Users/Ebad/Desktop/DLD/dldProject/dldProject.srcs/sources_1/new/pixel_gen.v:129]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1026.230 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [C:/Users/Ebad/Desktop/DLD/dldProject/dldProject.srcs/sources_1/new/top.v:2]
+INFO: [Synth 8-6157] synthesizing module 'vga_controller' [C:/Users/Ebad/Desktop/DLD/dldProject/dldProject.srcs/sources_1/new/vga_controller.v:21]
+	Parameter HD bound to: 640 - type: integer 
+	Parameter HF bound to: 48 - type: integer 
+	Parameter HB bound to: 16 - type: integer 
+	Parameter HR bound to: 96 - type: integer 
+	Parameter HMAX bound to: 799 - type: integer 
+	Parameter VD bound to: 480 - type: integer 
+	Parameter VF bound to: 10 - type: integer 
+	Parameter VB bound to: 33 - type: integer 
+	Parameter VR bound to: 2 - type: integer 
+	Parameter VMAX bound to: 524 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'vga_controller' (1#1) [C:/Users/Ebad/Desktop/DLD/dldProject/dldProject.srcs/sources_1/new/vga_controller.v:21]
+INFO: [Synth 8-6157] synthesizing module 'pixel_gen' [C:/Users/Ebad/Desktop/DLD/dldProject/dldProject.srcs/sources_1/new/pixel_gen.v:1]
+	Parameter X_MAX bound to: 639 - type: integer 
+	Parameter Y_MAX bound to: 479 - type: integer 
+	Parameter X_WALL_L bound to: 318 - type: integer 
+	Parameter X_WALL_R bound to: 321 - type: integer 
+	Parameter PAD_HEIGHT bound to: 80 - type: integer 
+	Parameter PAD_VELOCITY bound to: 3 - type: integer 
+	Parameter DIST_MIN bound to: 0 - type: integer 
+	Parameter DIST_MAX bound to: 9 - type: integer 
+	Parameter Y_MIN bound to: 0 - type: integer 
+	Parameter Y_MAX_PADDLE bound to: 399 - type: integer 
+	Parameter X_LPAD_L bound to: 32 - type: integer 
+	Parameter X_LPAD_R bound to: 35 - type: integer 
+	Parameter X_RPAD_L bound to: 600 - type: integer 
+	Parameter X_RPAD_R bound to: 603 - type: integer 
+	Parameter BALL_SIZE bound to: 10 - type: integer 
+	Parameter BALL_VELOCITY_POS bound to: 2 - type: integer 
+	Parameter BALL_VELOCITY_NEG bound to: -2 - type: integer 
+	Parameter BALL_RESET_X bound to: 320 - type: integer 
+	Parameter BALL_RESET_Y bound to: 240 - type: integer 
+	Parameter ONE_SECOND bound to: 50000000 - type: integer 
+	Parameter PLAY bound to: 2'b00 
+	Parameter RED_SCORED bound to: 2'b01 
+	Parameter BLUE_SCORED bound to: 2'b10 
+	Parameter RESET_BALL bound to: 2'b11 
+	Parameter RESET_DELAY bound to: 50000000 - type: integer 
+	Parameter TIMER_WIDTH bound to: 100 - type: integer 
+	Parameter TIMER_HEIGHT bound to: 10 - type: integer 
+	Parameter TIMER_X bound to: 320 - type: integer 
+	Parameter TIMER_Y bound to: 20 - type: integer 
+	Parameter BLUE_SCORE_X_TENS bound to: 140 - type: integer 
+	Parameter BLUE_SCORE_X_ONES bound to: 165 - type: integer 
+	Parameter RED_SCORE_X_TENS bound to: 460 - type: integer 
+	Parameter RED_SCORE_X_ONES bound to: 485 - type: integer 
+	Parameter SCORE_Y bound to: 40 - type: integer 
+	Parameter DIGIT_WIDTH bound to: 20 - type: integer 
+	Parameter DIGIT_HEIGHT bound to: 30 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'game_over_text' [C:/Users/Ebad/Desktop/DLD/dldProject/dldProject.srcs/sources_1/new/game_over_text.v:1]
+	Parameter GAME_OVER_Y bound to: 240 - type: integer 
+	Parameter GAME_OVER_TEXT_X bound to: 220 - type: integer 
+	Parameter GAME_OVER_TEXT_Y bound to: 220 - type: integer 
+	Parameter LETTER_WIDTH bound to: 20 - type: integer 
+	Parameter LETTER_HEIGHT bound to: 40 - type: integer 
+	Parameter LETTER_SPACING bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'game_over_text' (2#1) [C:/Users/Ebad/Desktop/DLD/dldProject/dldProject.srcs/sources_1/new/game_over_text.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'pixel_gen' (3#1) [C:/Users/Ebad/Desktop/DLD/dldProject/dldProject.srcs/sources_1/new/pixel_gen.v:1]
+INFO: [Synth 8-6157] synthesizing module 'debounce' [C:/Users/Ebad/Desktop/DLD/dldProject/dldProject.srcs/sources_1/new/debounce.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'debounce' (4#1) [C:/Users/Ebad/Desktop/DLD/dldProject/dldProject.srcs/sources_1/new/debounce.v:3]
+INFO: [Synth 8-6157] synthesizing module 'infra' [C:/Users/Ebad/Desktop/DLD/dldProject/dldProject.srcs/sources_1/new/ultrasonic_display.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'infra' (5#1) [C:/Users/Ebad/Desktop/DLD/dldProject/dldProject.srcs/sources_1/new/ultrasonic_display.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'top' (6#1) [C:/Users/Ebad/Desktop/DLD/dldProject/dldProject.srcs/sources_1/new/top.v:2]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1026.230 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1026.230 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1026.230 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 1026.230 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Ebad/Desktop/DLD/dldProject/dldProject.srcs/constrs_1/new/Create const_pong1.xdc]
+WARNING: [Vivado 12-584] No ports matched 'up'. [C:/Users/Ebad/Desktop/DLD/dldProject/dldProject.srcs/constrs_1/new/Create const_pong1.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Ebad/Desktop/DLD/dldProject/dldProject.srcs/constrs_1/new/Create const_pong1.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'up'. [C:/Users/Ebad/Desktop/DLD/dldProject/dldProject.srcs/constrs_1/new/Create const_pong1.xdc:8]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Ebad/Desktop/DLD/dldProject/dldProject.srcs/constrs_1/new/Create const_pong1.xdc:8]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'down'. [C:/Users/Ebad/Desktop/DLD/dldProject/dldProject.srcs/constrs_1/new/Create const_pong1.xdc:9]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Ebad/Desktop/DLD/dldProject/dldProject.srcs/constrs_1/new/Create const_pong1.xdc:9]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'down'. [C:/Users/Ebad/Desktop/DLD/dldProject/dldProject.srcs/constrs_1/new/Create const_pong1.xdc:10]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Ebad/Desktop/DLD/dldProject/dldProject.srcs/constrs_1/new/Create const_pong1.xdc:10]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'w'. [C:/Users/Ebad/Desktop/DLD/dldProject/dldProject.srcs/constrs_1/new/Create const_pong1.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Ebad/Desktop/DLD/dldProject/dldProject.srcs/constrs_1/new/Create const_pong1.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'w'. [C:/Users/Ebad/Desktop/DLD/dldProject/dldProject.srcs/constrs_1/new/Create const_pong1.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Ebad/Desktop/DLD/dldProject/dldProject.srcs/constrs_1/new/Create const_pong1.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 's'. [C:/Users/Ebad/Desktop/DLD/dldProject/dldProject.srcs/constrs_1/new/Create const_pong1.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Ebad/Desktop/DLD/dldProject/dldProject.srcs/constrs_1/new/Create const_pong1.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 's'. [C:/Users/Ebad/Desktop/DLD/dldProject/dldProject.srcs/constrs_1/new/Create const_pong1.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Ebad/Desktop/DLD/dldProject/dldProject.srcs/constrs_1/new/Create const_pong1.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/Ebad/Desktop/DLD/dldProject/dldProject.srcs/constrs_1/new/Create const_pong1.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Ebad/Desktop/DLD/dldProject/dldProject.srcs/constrs_1/new/Create const_pong1.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1043.047 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1043.047 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1043.047 ; gain = 16.816
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 1043.047 ; gain = 16.816
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1043.047 ; gain = 16.816
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1043.047 ; gain = 16.816
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 15    
+	   3 Input   11 Bit       Adders := 1     
+	   2 Input   11 Bit       Adders := 1     
+	   2 Input   10 Bit       Adders := 8     
+	   2 Input    7 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 4     
+	   3 Input    3 Bit       Adders := 2     
+	   2 Input    2 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	               16 Bit    Registers := 2     
+	               12 Bit    Registers := 1     
+	               10 Bit    Registers := 10    
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 4     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Multipliers : 
+	              32x32  Multipliers := 2     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 1     
+	   4 Input   32 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 2     
+	   6 Input   12 Bit        Muxes := 1     
+	   2 Input   12 Bit        Muxes := 1     
+	   4 Input   10 Bit        Muxes := 4     
+	   2 Input   10 Bit        Muxes := 6     
+	   8 Input    8 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 12    
+	   5 Input    4 Bit        Muxes := 2     
+	   5 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 6     
+	   4 Input    1 Bit        Muxes := 11    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+DSP Report: Generating DSP y_lpad_position0, operation Mode is: A*(B:0x18f).
+DSP Report: operator y_lpad_position0 is absorbed into DSP y_lpad_position0.
+DSP Report: Generating DSP y_rpad_position0, operation Mode is: A*(B:0x18f).
+DSP Report: operator y_rpad_position0 is absorbed into DSP y_rpad_position0.
+DSP Report: Generating DSP center_circle2, operation Mode is: A*B.
+DSP Report: operator center_circle2 is absorbed into DSP center_circle2.
+DSP Report: operator center_circle2 is absorbed into DSP center_circle2.
+DSP Report: Generating DSP center_circle2, operation Mode is: A*B.
+DSP Report: operator center_circle2 is absorbed into DSP center_circle2.
+DSP Report: operator center_circle2 is absorbed into DSP center_circle2.
+DSP Report: Generating DSP center_circle2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator center_circle2 is absorbed into DSP center_circle2.
+DSP Report: operator center_circle2 is absorbed into DSP center_circle2.
+DSP Report: Generating DSP right_field_arc3, operation Mode is: A*B.
+DSP Report: operator right_field_arc3 is absorbed into DSP right_field_arc3.
+DSP Report: operator right_field_arc3 is absorbed into DSP right_field_arc3.
+DSP Report: Generating DSP right_field_arc3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator right_field_arc3 is absorbed into DSP right_field_arc3.
+DSP Report: operator right_field_arc3 is absorbed into DSP right_field_arc3.
+DSP Report: Generating DSP right_field_arc3, operation Mode is: A*B.
+DSP Report: operator right_field_arc3 is absorbed into DSP right_field_arc3.
+DSP Report: operator right_field_arc3 is absorbed into DSP right_field_arc3.
+DSP Report: Generating DSP right_field_arc3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator right_field_arc3 is absorbed into DSP right_field_arc3.
+DSP Report: operator right_field_arc3 is absorbed into DSP right_field_arc3.
+DSP Report: Generating DSP left_field_arc2, operation Mode is: C+A*B.
+DSP Report: operator left_field_arc2 is absorbed into DSP left_field_arc2.
+DSP Report: operator left_field_arc3 is absorbed into DSP left_field_arc2.
+DSP Report: Generating DSP center_circle2, operation Mode is: A*B.
+DSP Report: operator center_circle2 is absorbed into DSP center_circle2.
+DSP Report: operator center_circle2 is absorbed into DSP center_circle2.
+DSP Report: Generating DSP center_circle2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator center_circle2 is absorbed into DSP center_circle2.
+DSP Report: operator center_circle2 is absorbed into DSP center_circle2.
+DSP Report: Generating DSP center_circle2, operation Mode is: A*B.
+DSP Report: operator center_circle2 is absorbed into DSP center_circle2.
+DSP Report: operator center_circle2 is absorbed into DSP center_circle2.
+DSP Report: Generating DSP center_circle2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator center_circle2 is absorbed into DSP center_circle2.
+DSP Report: operator center_circle2 is absorbed into DSP center_circle2.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 1043.047 ; gain = 16.816
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping	Report (see note below)
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|pixel_gen   | A*(B:0x18f)    | 16     | 9      | -      | -      | 25     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pixel_gen   | A*(B:0x18f)    | 16     | 9      | -      | -      | 25     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pixel_gen   | A*B            | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pixel_gen   | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pixel_gen   | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pixel_gen   | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pixel_gen   | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pixel_gen   | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pixel_gen   | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pixel_gen   | C+A*B          | 10     | 10     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pixel_gen   | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pixel_gen   | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pixel_gen   | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pixel_gen   | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:57 ; elapsed = 00:01:01 . Memory (MB): peak = 1076.539 ; gain = 50.309
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:07 ; elapsed = 00:01:11 . Memory (MB): peak = 1184.395 ; gain = 158.164
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:10 ; elapsed = 00:01:14 . Memory (MB): peak = 1194.445 ; gain = 168.215
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:16 ; elapsed = 00:01:21 . Memory (MB): peak = 1194.445 ; gain = 168.215
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:16 ; elapsed = 00:01:21 . Memory (MB): peak = 1194.445 ; gain = 168.215
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:17 ; elapsed = 00:01:22 . Memory (MB): peak = 1194.445 ; gain = 168.215
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:17 ; elapsed = 00:01:22 . Memory (MB): peak = 1194.445 ; gain = 168.215
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:17 ; elapsed = 00:01:22 . Memory (MB): peak = 1194.445 ; gain = 168.215
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:17 ; elapsed = 00:01:22 . Memory (MB): peak = 1194.445 ; gain = 168.215
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name   | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|top         | dbR/r3_reg | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
++------------+------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |BUFG    |     1|
+|2     |CARRY4  |   230|
+|3     |DSP48E1 |    12|
+|5     |LUT1    |    60|
+|6     |LUT2    |   537|
+|7     |LUT3    |   210|
+|8     |LUT4    |   246|
+|9     |LUT5    |   256|
+|10    |LUT6    |   369|
+|11    |SRL16E  |     1|
+|12    |FDCE    |   132|
+|13    |FDPE    |     6|
+|14    |FDRE    |    50|
+|15    |FDSE    |     6|
+|16    |IBUF    |    20|
+|17    |OBUF    |    14|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:17 ; elapsed = 00:01:22 . Memory (MB): peak = 1194.445 ; gain = 168.215
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:04 ; elapsed = 00:01:18 . Memory (MB): peak = 1194.445 ; gain = 151.398
+Synthesis Optimization Complete : Time (s): cpu = 00:01:17 ; elapsed = 00:01:22 . Memory (MB): peak = 1194.445 ; gain = 168.215
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.090 . Memory (MB): peak = 1199.328 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 242 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1199.328 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+27 Infos, 10 Warnings, 8 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:29 ; elapsed = 00:01:36 . Memory (MB): peak = 1199.328 ; gain = 173.098
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Ebad/Desktop/DLD/dldProject/dldProject.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon May 19 13:01:00 2025...

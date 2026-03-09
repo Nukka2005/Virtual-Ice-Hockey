@@ -1,0 +1,18 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Fri Oct 31 15:00:28 2025
+# Process ID: 7588
+# Current directory: C:/Users/Ebad/Desktop/Sem_2/DLD/Ping-Pong-Game-Vivado-Basys-3-/dldProject
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11316 C:\Users\Ebad\Desktop\Sem_2\DLD\Ping-Pong-Game-Vivado-Basys-3-\dldProject\dldProject.xpr
+# Log file: C:/Users/Ebad/Desktop/Sem_2/DLD/Ping-Pong-Game-Vivado-Basys-3-/dldProject/vivado.log
+# Journal file: C:/Users/Ebad/Desktop/Sem_2/DLD/Ping-Pong-Game-Vivado-Basys-3-/dldProject\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Ebad/Desktop/Sem_2/DLD/Ping-Pong-Game-Vivado-Basys-3-/dldProject/dldProject.xpr
+open_project C:/Users/Ebad/Downloads/dldProject/dldProject.xpr
+update_compile_order -fileset sources_1
+close_project
+open_project C:/Users/Ebad/Desktop/Sem_2/DLD/Ping-Pong-Game-Vivado-Basys-3-/dldProject/dldProject.xpr
+update_compile_order -fileset sources_1
